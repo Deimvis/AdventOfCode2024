@@ -1,7 +1,7 @@
 
 lines = []
 with open('input.txt') as f:
-    lines = [line for line in f]
+    lines = [line.strip() for line in f]
 
 import re
 regexp = re.compile(r"(?P<do>do\(\))|(?P<dont>don't\(\))|(?P<mul>mul\((\d{1,3}),(\d{1,3})\))")

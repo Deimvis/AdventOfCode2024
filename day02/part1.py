@@ -1,7 +1,7 @@
 
 lines = []
 with open('input.txt') as f:
-    lines = [line for line in f]
+    lines = [line.strip() for line in f]
 
 
 def is_safe(nums):
